@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'sudo /opt/apache-maven/bin/mvn compile'
+                sh 'sudo /usr/share/maven compile'
             }
         }
       stage('Package') {
             steps {
-                sh 'sudo /opt/apache-maven/bin/mvn package'
+                sh 'sudo /usr/share/maven package'
             }
         }
         stage('post') {
