@@ -3,13 +3,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                #sh 'sudo maven compile'
                 sh 'sudo touch /root/demo-1.txt'
             }
         }
       stage('Package') {
             steps {
-                #sh 'sudo maven package'
                 sh 'echo "file created" '
             }
         }
