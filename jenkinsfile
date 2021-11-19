@@ -1,17 +1,17 @@
 pipeline {
     agent any
     stages {
-        stage('Build-dev') {
+        stage('Build-QA') {
             steps {
                 sh 'sudo touch /root/demo-1.txt'
             }
         }
-      stage('Package-dev') {
+      stage('Package-QA') {
             steps {
                 sh 'echo "file created" '
             }
         }
-        stage('post-dev') {
+        stage('post-QA') {
             steps {
                 echo "final stage"
             }
